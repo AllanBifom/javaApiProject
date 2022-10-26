@@ -1,0 +1,5 @@
+This is just a test
+After implementing this we
+start using java files instead of txt files.
+we will then use pattern matching to decide.
+which is a class or not, as well as function.
