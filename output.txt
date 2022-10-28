@@ -2,3 +2,4 @@ Just Testing
 Nothing
 Just Testing
 Nothing
+This is just a testAfter implementing this westart using java files instead of txt files.we will then use pattern matching to decide.which is a class or not, as well as function.

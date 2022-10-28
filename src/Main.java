@@ -7,13 +7,22 @@ public class Main {
         // get write size from user as input.
         try {
             File output = new File("output.txt");
+            File input = new File("input.txt");
             String absolute =  output.getAbsolutePath();
+            String absolute2 = input.getAbsolutePath();
             BufferedWriter writer = new BufferedWriter(
                     new FileWriter(absolute,true)
             );
 
-            writer.write("Just Testing\n");
-            writer.write("Nothing\n");
+            BufferedReader reader = new BufferedReader(
+                    new FileReader(absolute2)
+            );
+            String inputValue;
+            while((inputValue = reader.readLine()) != null){
+                writer.write(inputValue + "\n");
+            }
+
+            reader.close();
             writer.close();
         }catch (Exception e){
             System.out.println("could not initialize buffer");
